@@ -23,18 +23,18 @@ The transition matrix: <br><br>
     <thead>
       <tr>
         <th></th>
+        <th>State 0</th>
         <th>State 1</th>
-        <th>State 2</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>State 1</th>
+        <th>State 0</th>
         <th>0.975</th>
         <th>0.025</th>
       </tr>
       <tr>
-        <th>State 2</th>
+        <th>State 1</th>
         <th>0.017</th>
         <th>0.983</th>
       </tr>
@@ -42,17 +42,24 @@ The transition matrix: <br><br>
   </table>
 </center>
 
+<br>
+
 Probability distribution for each state: <br>
 <center>
 <img src="images/State0.png" alt="$SPY price and HMM states" class="inline"/>
 <img src="images/State1.png" alt="$SPY price and HMM states" class="inline"/>
 </center>
 
+<br>
+
 Most likely sequence of states decoded with the Viterbi Algorithm: <br>
 <center>
 <img src="images/SPY.png" alt="$SPY price and HMM states" class="inline"/>
 </center>
 
+<br>
+
+It seems that State 0 reflects more stable markets, while State 1 reflects increased volatility. This was surprising because I expected the states to be bull/bear. So yeah, HMM's are kinda cool.
 
 
 </body>
