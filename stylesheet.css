@@ -88,10 +88,10 @@ li {
 aside,
 [class *= "sidebar"],
 [id *= "sidebar"] {
-	max-width: 100%;
-	margin: 0 auto;
 	border: 1px solid lightgrey;
-	padding: 5px 15px;
+    margin: 0;
+	padding: 0;
+    width: 100%;
 }
 
 @media (min-width: 1921px) {
