@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<h1>Alex Sun' Portfolio (Work in progress)</h1>
-<p>Hi, I'm a 3rd year at UC Berkeley studying Applied Math and Computer Science. Here are some of my personal projects.</p>
+    <h1>Alex Sun' Portfolio (Work in progress)</h1>
+    <p>Hi, I'm a 3rd year at UC Berkeley studying Applied Math and Computer Science. Here are some personal projects that could use more detail than my resume provided.</p>
+
+    <!--
 <h3>ChatGPT API for Translation</h3>
-I had a few novels that I wanted to read, but they didn't have English translations. This is a simple Python script that uses ChatGPT to translate text. All you need is the original text in a .txt file. The code is here if you want to try it for yourself. <br><br>
+This is a simple Python script that uses ChatGPT to translate text. It takes the original text file and outputs a translated version. I've used it on some previously untranslated novels<br><br>
 
 [insert sample]
+-->
+    <div>
+        <h3>HMM Stocks</h3>
+        I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions
+        were the daily % price changes. Results below. <br><br>
 
-<h3>HMM Speech Recognition</h3>
-I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and Viterbi algorithms. <br><br>
+        The transition matrix: <br><br>
+        <center>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>State 0</th>
+                        <th>State 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>State 0</th>
+                        <th>0.975</th>
+                        <th>0.025</th>
+                    </tr>
+                    <tr>
+                        <th>State 1</th>
+                        <th>0.017</th>
+                        <th>0.983</th>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
 
-Then, I tried to train an HHMM for speech recognition. 
+        <br><br>
 
+        Probability distribution for each state: <br>
+        <center>
+            <img src="images/State0.png" alt="$SPY price and HMM states" class="inline" />
+            <img src="images/State1.png" alt="$SPY price and HMM states" class="inline" />
+        </center>
 
-<h3>HMM Stocks</h3>
-I used a regular Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes. Results below. <br><br>
+        <br>
 
-The transition matrix: <br><br>
-<center>
-<table border="1">
-    <thead>
-      <tr>
-        <th></th>
-        <th>State 0</th>
-        <th>State 1</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>State 0</th>
-        <th>0.975</th>
-        <th>0.025</th>
-      </tr>
-      <tr>
-        <th>State 1</th>
-        <th>0.017</th>
-        <th>0.983</th>
-      </tr>
-    </tbody>
-  </table>
-</center>
+        Most likely sequence of states decoded with the Viterbi Algorithm: <br>
+        <center>
+            <img src="images/SPY.png" alt="$SPY price and HMM states" class="inline" />
+        </center>
 
-<br><br>
+        <br>
 
-Probability distribution for each state: <br>
-<center>
-<img src="images/State0.png" alt="$SPY price and HMM states" class="inline"/>
-<img src="images/State1.png" alt="$SPY price and HMM states" class="inline"/>
-</center>
+        It seems that State 0 reflects more stable bull markets, while State 1 reflects increased volatility during bear
+        markets. This model offers a simple way to understand how the stock market works. So yeah, HMM's are kinda cool.
+    </div>
 
-<br>
+    <div>
+        <h3>HMM Speech Recognition</h3>
+        I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis
+        and
+        Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and
+        Viterbi
+        algorithms. <br><br>
 
-Most likely sequence of states decoded with the Viterbi Algorithm: <br>
-<center>
-<img src="images/SPY.png" alt="$SPY price and HMM states" class="inline"/>
-</center>
-
-<br>
-
-It seems that State 0 reflects more stable markets, while State 1 reflects increased volatility. This was surprising because I expected the states to be bull/bear. So yeah, HMM's are kinda cool.
+        Then, I tried to train an HHMM for speech recognition.
+    </div>
 
 
 </body>
+
 </html>
