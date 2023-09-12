@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html>
-
 <body>
-    <div class="wrapper">
+<h1>My Portfolio</h1>
+<h3>About Me</h3>
+<p>Hi, I'm a 3rd year at UC Berkeley studying Applied Math and Computer Science. Here are some of my personal projects.</p>
+<h3>ChatGPT API for Translation</h3>
+I had a few novels that I wanted to read, but they didn't have English translations. This is a simple Python script that uses ChatGPT to translate text. All you need is the original text in a .txt file. The code is here if you want to try it for yourself. <br><br>
 
-        <div class="left">
-            <img class="profile-picture" src="img/profile.jpg" width="200" />
-            <h1 class="name">Ian Sikes</h1>
-            <h4 class="subtitle">CS Student</h4>
-        </div>
+[insert sample]
 
-        <div class="right">
-            <p class="bio">
-                Computer Science student, web developer, blah blah blah.
-                Thanks for visiting my website.
-            </p>
-            <ul class="social-links">
-                <li><a href="https://github.com/ianjsikes">Github</a></li>
-                <li><a href="https://medium.com/@ianjsikes">Medium</a></li>
-            </ul>
-        </div>
+<h3>HMM Speech Recognition</h3>
+I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and Viterbi algorithms. <br><br>
 
-    </div>
+Then, I tried to train an HHMM for speech recognition. 
+
+
+<h3>HMM Stocks</h3>
+I used a regular Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily price changes.
+
+The transition matrix: <br><br>
+<center>
+<table border="1">
+    <thead>
+      <tr>
+        <th></th>
+        <th>State 1</th>
+        <th>State 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>State 1</th>
+        <th>0.975</th>
+        <th>0.025</th>
+      </tr>
+      <tr>
+        <th>State 2</th>
+        <th>0.017</th>
+        <th>0.983</th>
+      </tr>
+    </tbody>
+  </table>
+</center>
+
+
 </body>
-
 </html>
