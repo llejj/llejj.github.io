@@ -49,6 +49,10 @@ h1 {
 h2 {
 	font-size: 20px;
 	line-height: 25px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #D8D8D8;
+	border-top: 1px solid #D8D8D8;
 }
 
 h3 {
@@ -98,3 +102,7 @@ aside,
 		font-size: 18px;
 	}
 }
+
+a:hover {
+    color:rgb(0, 149, 255);
+  }
