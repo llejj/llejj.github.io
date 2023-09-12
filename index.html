@@ -3,7 +3,7 @@
 
 <body>
     <h1>Alex Sun' Portfolio (Work in progress)</h1>
-    <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in Spring 2025. Below are personal projects from my resume that could use some elaborating. I hope that, under the guidance of an internship, I can work on larger projects and gain experience solving real-world problems. </p>
+    <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in Spring 2025. Below are personal projects from my resume that could use elaborating. I hope that, under the guidance of an internship, I can work on larger projects and gain experience solving real-world problems. </p>
 
     <!--
 <h3>ChatGPT API for Translation</h3>
@@ -13,7 +13,7 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
 -->
     <div>
         <h3>HMM Stocks</h3>
-        <p>I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes. Results below.</p>
+        <p>I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes.</p>
 
         <p>The transition matrix:</p>
         <center>
@@ -42,8 +42,8 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
 
         <p>Probability distribution for each state:</p>
         <center>
-            <img src="images/State0.png" alt="$SPY price and HMM states" class="inline" />
-            <img src="images/State1.png" alt="$SPY price and HMM states" class="inline" />
+            <img src="images/State0.png" alt="State 0's Probability Distribution" class="inline" />
+            <img src="images/State1.png" alt="State 1's Probability Distribution" class="inline" />
         </center>
 
         <p>Most likely sequence of states decoded with the Viterbi Algorithm:</p>
@@ -58,11 +58,18 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
 
     <div>
         <h3>HMM Speech Recognition</h3>
-        <p>I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and Viterbi algorithms.</p>
+        <p>I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by Shai Fine, Yoram Singer, and Naftali Tishby Specifically, I implemented the Baum-Welch and Viterbi algorithms.</p>
 
-        <p>Then, I tried to train an HHMM for speech recognition.</p>
+        <p>Then, I tried to train an HHMM for speech recognition. Here's how I hoped my algorithm would work: 
+            <ol>
+                <li>Extract MFCC features from audio signal (which should even out differences in voice)</li>
+                <li>The deepest layer of the HHMM decodes phonemes from MFCC features</li>
+                <li>The next layer of the HHMM decodes words from phonemes</li>
+                <li>The top layer decodes common word patterns from words</li>
+            </ol>
+        </p>
 
-        <p>Unfortunately, the final training took way too long. The Generalized Baum-Welch runs in O(__). In the future, I plan on implementing the Greedy ... algorithm as described in [other paper], as well as optimizing the tree-structure of the HHMM.</p>
+        <p>I managed to train the deepest layer separately as a simple HMM, but I had issues running the Generalized Baum-Welch on the full model. In the future, I plan to rewrite my HHMM more efficiently so that the training process runs smoothly. I worked on this project before I took important classes such as D.S. and Algorithms, so I feel I could do a much better job now.</p>
     </div>
 
 </body>
