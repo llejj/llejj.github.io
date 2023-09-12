@@ -11,6 +11,7 @@ body {
 	font-size: 16px;
 	background-color: #222;
 	color: #aaa;
+    padding: 20px 20px;
 }
 
 .simple-container {
@@ -87,7 +88,7 @@ li {
 aside,
 [class *= "sidebar"],
 [id *= "sidebar"] {
-	max-width: 90%;
+	max-width: 100%;
 	margin: 0 auto;
 	border: 1px solid lightgrey;
 	padding: 5px 15px;
