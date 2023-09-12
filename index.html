@@ -3,7 +3,7 @@
 
 <body>
     <h1>Alex Sun' Portfolio (Work in progress)</h1>
-    <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in Spring 2025. Here are two personal projects from my resume that could use some elaborating. I'm hoping that, under the guidance of an internship, I can work on larger projects and gain experience solving real-world problems. </p>
+    <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in Spring 2025. Below are personal projects from my resume that could use some elaborating. I hope that, under the guidance of an internship, I can work on larger projects and gain experience solving real-world problems. </p>
 
     <!--
 <h3>ChatGPT API for Translation</h3>
@@ -15,7 +15,7 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
         <h3>HMM Stocks</h3>
         <p>I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes. Results below.</p>
 
-        The transition matrix: <br><br>
+        <p>The transition matrix:</p>
         <center>
             <table border="1">
                 <thead>
@@ -40,38 +40,30 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
             </table>
         </center>
 
-        <br><br>
-
-        Probability distribution for each state: <br>
+        <p>Probability distribution for each state:</p>
         <center>
             <img src="images/State0.png" alt="$SPY price and HMM states" class="inline" />
             <img src="images/State1.png" alt="$SPY price and HMM states" class="inline" />
         </center>
 
-        <br>
-
-        Most likely sequence of states decoded with the Viterbi Algorithm: <br>
+        <p>Most likely sequence of states decoded with the Viterbi Algorithm:</p>
         <center>
             <img src="images/SPY.png" alt="$SPY price and HMM states" class="inline" />
         </center>
 
-        <br>
+        <p>It seems that State 0 reflects more stable bull markets, while State 1 reflects increased volatility during bear
+        markets. This model offers a simple description of the stock market. So yeah, HMM's are kinda cool.</p>
 
-        It seems that State 0 reflects more stable bull markets, while State 1 reflects increased volatility during bear
-        markets. This model offers a simple description of the stock market. So yeah, HMM's are kinda cool.
     </div>
 
     <div>
         <h3>HMM Speech Recognition</h3>
-        I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and
-        Viterbi
-        algorithms. <br><br>
+        <p>I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by SHAI FINE, YORAM SINGER, and NAFTALI TISHBY. Specifically, I implemented the Baum-Welch and Viterbi algorithms.</p>
 
-        Then, I tried to train an HHMM for speech recognition.
+        <p>Then, I tried to train an HHMM for speech recognition.</p>
 
-        Unfortunately, the final training took way too long. The Generalized Baum-Welch runs in O(__). In the future, I plan on implementing the Greedy ... algorithm as described in [other paper], as well as optimizing the tree-structure of the HHMM. 
+        <p>Unfortunately, the final training took way too long. The Generalized Baum-Welch runs in O(__). In the future, I plan on implementing the Greedy ... algorithm as described in [other paper], as well as optimizing the tree-structure of the HHMM.</p>
     </div>
-
 
 </body>
 
