@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
@@ -8,119 +8,6 @@
     <title>Alex Sun's Portfolio</title>
     <link href='./stylesheet.css' rel='stylesheet'>
 </head>
-<!-- 
-<body>
-    <h1>Alex Sun's Portfolio</h1>
-    <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in 2026. My studies focus on probability theory and machine learning. Below are some noteworthy projects I want to highlight.</p>
-
-    <br>
-    <div>
-        <center><h3 id="HarmonyXR">HarmonyXR</h3></center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yzgMXgW-zp0?si=uJK4O7emQYYlwXVL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <h4>About</h4>
-        <p>Our platform is a collaborative music composition tool that allows deaf and hearing people to create music together using XR (Extended Reality). It enables users to visualize, feel, and shape music in a shared space that transcends traditional musical notes.
-        </p>
-        <p>When a traditional producer creates a melody using a piano, our system visualizes it through spatial representations along with corresponding vibrations. This allows users to feel the music in an abstract way that resonates with their experience. After the initial composition, both deaf and hearing users can collaborate on modifying the music by adjusting the visual shapes and experiencing the resulting changes through haptic feedback. Hearing producers can experience how deaf listeners perceive the music through vibrations, while deaf producers use gestural interactions to convey their ideas and modify the music by altering the visuals. For example, they can highlight sections they want to make more intense by opening their arms, which will increase the intensity accordingly. This approach helps deaf users, who may have difficulty understanding or expressing music through traditional notation, to engage with the music intuitively. By providing an interface that allows both groups to express their mental models through abstract feelings, our platform creates a new, shared language for music composition.
-        </p>
-        <h4>Features</h4>
-        <p>We used XR technology to create an interactive and immersive space where both deaf and hearing creators can engage with music in their own ways. Here is how we implemented the system:
-        </p>
-        <ul>
-            <li>Hand Tracking: We used an interaction SDK to track hand movements, allowing us to capture the interaction with piano tiles and gestural controls.</li>
-            <li>Visual Representations: Musical notes are converted into visual elements that can be manipulated spatially, providing an abstract representation of musical qualities like intensity and rhythm.</li>
-            <li>Haptic Feedback: We used a haptic SDK to simulate the vibrations created through the music sequence, allowing deaf users to experience the music through tactile sensations.</li>
-            <li>Gestural Interactions: We incorporated complex gestures to modify visual representations, which are then mapped back to alter the musical elements. For instance, users can enlarge visual elements to increase the intensity of a particular sound by stretching the visual representations, facilitating intuitive adjustments.</li>
-          </ul>
-        <h4>Future Plans</h4>
-        <p>
-            Moving forward, we may conduct interviews or studies to gather insights directly from the deaf community to ensure that our tool aligns with their preferences and needs. We also see the potential for this platform to be scaled beyond just deaf and hearing users. Our vision is to create an inclusive music composition tool that can be used by novices without a background in music, allowing them to explore and create music through intuitive and abstract concepts. We believe that, with more development and user feedback, our platform can become a powerful tool for creative expression accessible to everyone.
-        </p>
-    </div>
-
-    <br>
-    <div>
-        <center><h3 id="Stellar Farmers">Stellar Farmers</h3></center>
-
-        <p>Project Demo: <a href="https://www.canva.com/design/DAGS0mPYvCU/dBmYUSj73XX4TBusxhqNmw/view?utm_content=DAGS0mPYvCU&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Stellar Farmers</a></p>
-
-
-        <p>We offer a dynamic, user-friendly web platform designed to provide farmers access to critical data essential for enhancing agricultural productivity. Our platform empowers farmers to make smart decisions regarding planting, irrigation, pest control, and harvesting. While NASA already provides valuable information that can assist farmers in addressing challenges, our goal is to make this data more accessible to farmers of diverse backgrounds. We achieve this through a visually intuitive website, simplifying complex datasets into a clear and effective format, allowing farmers to use these insights with ease and confidence. The information is tailored to each farm's specific location, providing detailed data on temperature, crop yield, soil and plant evaporation, vegetation, and more. This is achieved by leveraging NASA datasets and advanced tools such as FireBase. By delivering precise, location-based insights, our platform helps farmers optimize their strategies and respond effectively to local conditions, such as potential droughts, and flooding, among others.</p>
-        <p>The website consists of two distinct pages, each crafted to enhance the user experience. Key features derived from the NASA dataset include crop yield, soil and plant evaporation, temperature, and vegetation. Upon accessing the platform, farmers are prompted to enter their location via an initial form. This input leads to a new page that displays location-specific data, such as temperature, vegetation, soil evaporation, and crop yield. In addition to real-time information, farmers can access historical data relevant to their location. By providing those insights from the NASA database, the platform offers practical and dynamic solutions to the food security challenges farmers face, which leads to financial benefits and improved food security. Moreover, the website allows for comparisons between different counties, further assisting farmers in their decision-making. Looking ahead, a future goal is to develop a predictive model that offers deeper insights and expand the website's data to support farmers in other countries, particularly those facing environmental and economic challenges. The website was developed using HTML, CSS, JavaScript, and PHP, with the webpage design entirely coded by the front-end team.</p>
-    </div>
-
-
-    <br>
-    <div>
-        <center><h3 id="Computer Graphics Projects">Computer Graphics Projects</h3></center>
-
-        <p>Projects linked below:
-            <ol>
-                <li><a href="https://cal-cs184-student.github.io/hw-webpages-sp24-llejj/hw3/index.html">Path Tracer</a></li>
-                <li><a href="https://catttttttt.github.io/Computer-graphics-and-imaging-final-project-webpage/Webpage/Final/index.html">Custom Shaders</a></li>
-            </ol>
-        </p>
-    </div>
-
-    
-    <br>
-    <div>
-        <center><h3 id="stocks"><a href="https://github.com/llejj/HMM_stocks">HMM Stocks</a></h3></center>
-        <p>I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes.</p>
-
-        <p>The transition matrix:</p>
-        <center>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>State 0</th>
-                        <th>State 1</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>State 0</th>
-                        <th>0.975</th>
-                        <th>0.025</th>
-                    </tr>
-                    <tr>
-                        <th>State 1</th>
-                        <th>0.017</th>
-                        <th>0.983</th>
-                    </tr>
-                </tbody>
-            </table>
-        </center>
-
-        <p>Probability distribution for each state:</p>
-        <center>
-            <img src="images/State0.png" alt="State 0's Probability Distribution" class="inline" />
-            <img src="images/State1.png" alt="State 1's Probability Distribution" class="inline" />
-        </center>
-
-        <p>Most likely sequence of states decoded with the Viterbi Algorithm:</p>
-        <center>
-            <img src="images/SPY.png" alt="$SPY price and HMM states" class="inline" />
-        </center>
-
-        <p>It seems that State 0 reflects more stable bull markets, while State 1 reflects increased volatility during bear
-        markets. This model offers a simple description of the stock market.</p>
-
-    </div>
-
-    <br>
-    <div>
-        <center><h3 id="speech"><a href="https://github.com/llejj/llejj.github.io/blob/main/images/MAT167_Final_Project-1.pdf">PageRank</a></h3></center>
-        <object data="errorimages/MAT167_Final_Project-1.pdf" type="application/pdf" width="100%" height="90%">
-          <p><a href="images/MAT167_Final_Project-1.pdf">View paper here</a></p>
-          <p>Google’s PageRank algorithm models surfing the Web as a random walk. The basic idea is to represent this random walk as a Markov Chain. The PageRank of each website is its probability in the stationary distribution. A website’s PageRank can be interpreted as a measure of its popularity or importance. The PageRank algorithm can be applied to any directed graph, not just to websites. </p>
-          <p>In this project, we used PageRank to analyze the LastFM Asia Social Network, where the vertices in the directed graph are users, and the edges are follower relationships between them. We calculated the PageRank by solving a sparse linear system. We found that a small amount of users have much higher PageRank than the typical user.
-          </p>
-        </object>
-    </div>
-
-</body> -->
 
 <body>
     <!-- Sidebar Navigation -->
@@ -131,7 +18,6 @@
         <a href="#Computer Graphics Projects">Graphics</a>
         <a href="#Stocks">HMM Stocks</a>
         <a href="#PageRank">PageRank</a>
-        <a href="#contact">Contact Me</a>
     </nav>
 
     <!-- Main Content -->
@@ -146,14 +32,75 @@
             <h2>HarmonyXR</h2>
             <iframe src="https://www.youtube.com/embed/yzgMXgW-zp0?si=uJK4O7emQYYlwXVL" title="HarmonyXR Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h3>About</h3>
-            <p>[Your HarmonyXR description goes here...]</p>
+            <p>
+                Our platform is a collaborative music composition tool that allows deaf and hearing people to create music 
+                together using XR (Extended Reality). It enables users to visualize, feel, and shape music in a shared space 
+                that transcends traditional musical notes.
+            </p>
+            <p>
+                When a traditional producer creates a melody using a piano, our system visualizes it through spatial 
+                representations along with corresponding vibrations. This allows users to feel the music in an abstract way 
+                that resonates with their experience. After the initial composition, both deaf and hearing users can 
+                collaborate on modifying the music by adjusting the visual shapes and experiencing the resulting changes 
+                through haptic feedback.
+            </p>
+            <p>
+                Hearing producers can experience how deaf listeners perceive the music through vibrations, while deaf producers 
+                use gestural interactions to convey their ideas and modify the music by altering the visuals. For example, they 
+                can highlight sections they want to make more intense by opening their arms, which will increase the intensity 
+                accordingly. This approach helps deaf users, who may have difficulty understanding or expressing music through 
+                traditional notation, to engage with the music intuitively. By providing an interface that allows both groups 
+                to express their mental models through abstract feelings, our platform creates a new, shared language for music 
+                composition.
+            </p>
+
+            <h3>Features</h3>
+            <p>
+                We used XR technology to create an interactive and immersive space where both deaf and hearing creators can 
+                engage with music in their own ways. Here is how we implemented the system:
+            </p>
+            <ul>
+                <li>
+                    <strong>Hand Tracking:</strong> We used an interaction SDK to track hand movements, allowing us to capture 
+                    the interaction with piano tiles and gestural controls.
+                </li>
+                <li>
+                    <strong>Visual Representations:</strong> Musical notes are converted into visual elements that can be 
+                    manipulated spatially, providing an abstract representation of musical qualities like intensity and rhythm.
+                </li>
+                <li>
+                    <strong>Haptic Feedback:</strong> We used a haptic SDK to simulate the vibrations created through the music 
+                    sequence, allowing deaf users to experience the music through tactile sensations.
+                </li>
+                <li>
+                    <strong>Gestural Interactions:</strong> We incorporated complex gestures to modify visual representations, 
+                    which are then mapped back to alter the musical elements. For instance, users can enlarge visual elements 
+                    to increase the intensity of a particular sound by stretching the visual representations, facilitating 
+                    intuitive adjustments.
+                </li>
+            </ul>
+
+            <h3>Future Plans</h3>
+            <p>
+                Moving forward, we may conduct interviews or studies to gather insights directly from the deaf community to 
+                ensure that our tool aligns with their preferences and needs. We also see the potential for this platform to 
+                be scaled beyond just deaf and hearing users.
+            </p>
+            <p>
+                Our vision is to create an inclusive music composition tool that can be used by novices without a background 
+                in music, allowing them to explore and create music through intuitive and abstract concepts. We believe that, 
+                with more development and user feedback, our platform can become a powerful tool for creative expression 
+                accessible to everyone.
+            </p>
+
         </section>
 
         <!-- Stellar Farmers Project -->
         <section id="Stellar Farmers">
             <h2>Stellar Farmers</h2>
             <p>Project Demo: <a href="https://www.canva.com/design/DAGS0mPYvCU/dBmYUSj73XX4TBusxhqNmw/view?utm_content=DAGS0mPYvCU&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Stellar Farmers</a></p>
-            <p>[Your Stellar Farmers description goes here...]</p>
+            <p>We offer a dynamic, user-friendly web platform designed to provide farmers access to critical data essential for enhancing agricultural productivity. Our platform empowers farmers to make smart decisions regarding planting, irrigation, pest control, and harvesting. While NASA already provides valuable information that can assist farmers in addressing challenges, our goal is to make this data more accessible to farmers of diverse backgrounds. We achieve this through a visually intuitive website, simplifying complex datasets into a clear and effective format, allowing farmers to use these insights with ease and confidence. The information is tailored to each farm's specific location, providing detailed data on temperature, crop yield, soil and plant evaporation, vegetation, and more. This is achieved by leveraging NASA datasets and advanced tools such as FireBase. By delivering precise, location-based insights, our platform helps farmers optimize their strategies and respond effectively to local conditions, such as potential droughts, and flooding, among others.</p>
+            <p>The website consists of two distinct pages, each crafted to enhance the user experience. Key features derived from the NASA dataset include crop yield, soil and plant evaporation, temperature, and vegetation. Upon accessing the platform, farmers are prompted to enter their location via an initial form. This input leads to a new page that displays location-specific data, such as temperature, vegetation, soil evaporation, and crop yield. In addition to real-time information, farmers can access historical data relevant to their location. By providing those insights from the NASA database, the platform offers practical and dynamic solutions to the food security challenges farmers face, which leads to financial benefits and improved food security. Moreover, the website allows for comparisons between different counties, further assisting farmers in their decision-making. Looking ahead, a future goal is to develop a predictive model that offers deeper insights and expand the website's data to support farmers in other countries, particularly those facing environmental and economic challenges. The website was developed using HTML, CSS, JavaScript, and PHP, with the webpage design entirely coded by the front-end team.</p>
         </section>
 
         <!-- Graphics Projects -->
@@ -170,27 +117,55 @@
         <!-- HMM Stocks -->
         <section id="Stocks">
             <h2>HMM Stocks</h2>
-            <p>[Your HMM Stocks description goes here...]</p>
+            <p>I used a Hidden Markov Model to analyze historical $SPY data. My model had two hidden states, and its emissions were the daily % price changes.</p>
+
+            <p>The transition matrix:</p>
+            <center>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>State 0</th>
+                            <th>State 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>State 0</th>
+                            <th>0.975</th>
+                            <th>0.025</th>
+                        </tr>
+                        <tr>
+                            <th>State 1</th>
+                            <th>0.017</th>
+                            <th>0.983</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+
+            <p>Probability distribution for each state:</p>
+            <center>
+                <img src="images/State0.png" alt="State 0's Probability Distribution" class="inline" />
+                <img src="images/State1.png" alt="State 1's Probability Distribution" class="inline" />
+            </center>
+
+            <p>Most likely sequence of states decoded with the Viterbi Algorithm:</p>
+            <center>
+                <img src="images/SPY.png" alt="$SPY price and HMM states" class="inline" />
+            </center>
+
+            <p>It seems that State 0 reflects more stable bull markets, while State 1 reflects increased volatility during bear
+            markets. This model offers a simple description of the stock market.</p>
         </section>
 
         <!-- PageRank -->
         <section id="PageRank">
             <h2>PageRank</h2>
-            <p>[Your PageRank description goes here...]</p>
-        </section>
-
-        <!-- Contact Form -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="contact-form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-                <input type="submit" value="Send">
-            </form>
+            <p><a href="images/MAT167_Final_Project-1.pdf">View paper here</a></p>
+            <p>Google’s PageRank algorithm models surfing the Web as a random walk. The basic idea is to represent this random walk as a Markov Chain. The PageRank of each website is its probability in the stationary distribution. A website’s PageRank can be interpreted as a measure of its popularity or importance. The PageRank algorithm can be applied to any directed graph, not just to websites. </p>
+            <p>In this project, we used PageRank to analyze the LastFM Asia Social Network, where the vertices in the directed graph are users, and the edges are follower relationships between them. We calculated the PageRank by solving a sparse linear system. We found that a small amount of users have much higher PageRank than the typical user.
+            </p>
         </section>
     </main>
 </body>
