@@ -1,32 +1,17 @@
 <!DOCTYPE html>
-<html>
-
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
-
+<html lang="en">
+    
 <head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
     <title>Alex Sun's Portfolio</title>
     <link href='./stylesheet.css' rel='stylesheet'>
 </head>
-
-<!-- The sidebar 
-<div class="sidebar">
-    <a class="active" href="#home">Home</a>
-    <a href="#stocks">HMM Stocks</a>
-    <a href="#speech">HMM Speech Recognition</a>
-</div> -->
-
+<!-- 
 <body>
     <h1>Alex Sun's Portfolio</h1>
     <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science graduating in 2026. My studies focus on probability theory and machine learning. Below are some noteworthy projects I want to highlight.</p>
-
-    <!--
-<h3>ChatGPT API for Translation</h3>
-This is a simple Python script that uses ChatGPT to translate text. It takes the original text file and outputs a translated version. I've used it on some previously untranslated novels<br><br>
-
-[insert sample]
--->
 
     <br>
     <div>
@@ -56,7 +41,7 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
     <br>
     <div>
         <center><h3 id="Stellar Farmers">Stellar Farmers</h3></center>
-        
+
         <p>Project Demo: <a href="https://www.canva.com/design/DAGS0mPYvCU/dBmYUSj73XX4TBusxhqNmw/view?utm_content=DAGS0mPYvCU&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Stellar Farmers</a></p>
 
 
@@ -134,25 +119,80 @@ This is a simple Python script that uses ChatGPT to translate text. It takes the
           </p>
         </object>
     </div>
-    
-    <!--
-    <br>
-    <div>
-        <center><h3 id="speech"><a href="https://github.com/llejj/Speech_Recognition">HMM Speech Recognition</a></h3></center>
-        <p>I implemented a Hierarchical Hidden Markov Model (HHMM) based on "The Hierarchical Hidden Markov Model: Analysis and Applications" by Shai Fine, Yoram Singer, and Naftali Tishby. In particular, I implemented the Baum-Welch and Viterbi algorithms.</p>
 
-        <p>Then, I began to train an HHMM for speech recognition. The basic idea was: 
-            <ol>
-                <li>Extract MFCC features from audio signal (which should even out differences in voice)</li>
-                <li>The deepest layer of the HHMM decodes phonemes from MFCC features</li>
-                <li>The next layer of the HHMM decodes words</li>
-                <li>The top layer decodes common word sequences</li>
-            </ol>
-        </p>
+</body> -->
 
-        <p>I trained the deepest layer separately as simple HMMs, but had issues running the Generalized Baum-Welch on the full model. In the future, I plan to rewrite my HHMM more efficiently so that the training process runs smoothly. I worked on this project before I took important classes such as D.S. and Algorithms, so I feel I could do a much better job now.</p>
-    </div> -->
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h3>Navigation</h3>
+        <a href="#HarmonyXR">HarmonyXR</a>
+        <a href="#Stellar Farmers">Stellar Farmers</a>
+        <a href="#Computer Graphics Projects">Graphics</a>
+        <a href="#Stocks">HMM Stocks</a>
+        <a href="#PageRank">PageRank</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        <header>
+            <h1>Alex Sun's Portfolio</h1>
+            <p>Hi, I'm an undergraduate at UC Berkeley studying Applied Math and Computer Science, graduating in 2026. My studies focus on probability theory and machine learning. Below are some noteworthy projects I want to highlight.</p>
+        </header>
+
+        <!-- HarmonyXR Project -->
+        <section id="HarmonyXR">
+            <h2>HarmonyXR</h2>
+            <iframe src="https://www.youtube.com/embed/yzgMXgW-zp0?si=uJK4O7emQYYlwXVL" title="HarmonyXR Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>About</h3>
+            <p>[Your HarmonyXR description goes here...]</p>
+        </section>
+
+        <!-- Stellar Farmers Project -->
+        <section id="Stellar Farmers">
+            <h2>Stellar Farmers</h2>
+            <p>Project Demo: <a href="https://www.canva.com/design/DAGS0mPYvCU/dBmYUSj73XX4TBusxhqNmw/view?utm_content=DAGS0mPYvCU&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Stellar Farmers</a></p>
+            <p>[Your Stellar Farmers description goes here...]</p>
+        </section>
+
+        <!-- Graphics Projects -->
+        <section id="Computer Graphics Projects">
+            <h2>Computer Graphics Projects</h2>
+            <p>Projects linked below:
+                <ul>
+                    <li><a href="https://cal-cs184-student.github.io/hw-webpages-sp24-llejj/hw3/index.html">Path Tracer</a></li>
+                    <li><a href="https://catttttttt.github.io/Computer-graphics-and-imaging-final-project-webpage/Webpage/Final/index.html">Custom Shaders</a></li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- HMM Stocks -->
+        <section id="Stocks">
+            <h2>HMM Stocks</h2>
+            <p>[Your HMM Stocks description goes here...]</p>
+        </section>
+
+        <!-- PageRank -->
+        <section id="PageRank">
+            <h2>PageRank</h2>
+            <p>[Your PageRank description goes here...]</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
